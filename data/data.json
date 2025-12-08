@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "image": "/logo-chrome.svg",
+        "title": "Add to Chrome",
+        "version": "Minimum version 62",
+        "install": "Add & install extension"
+    },
+    {
+        "id": 2,
+        "image": "/logo-firefox.svg",
+        "title": "Add to Firefox",
+        "version": "Minimum version 55",
+        "install": "Add & install extension"
+    },
+    {
+        "id": 3,
+        "image": "/logo-opera.svg",
+        "title": "add to Opera",
+        "version": "Minimum version 46",
+        "install": "Add & install extension"
+    }
+]
