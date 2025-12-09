@@ -1,4 +1,36 @@
 .text-width {
-    width: 30ch;
+    width: 35ch;
     margin: auto;
+}
+
+.blue-backdrop {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-end: -15%;
+    z-index: -1;
+}
+
+// features
+
+.blue-backdrop-feature {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: -15%;
+    z-index: -1;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+// extension card
+
+.card-shadow {
+    box-shadow: 2px 4px 10px 0px rgba(183, 183, 183, 0.35);
 }
