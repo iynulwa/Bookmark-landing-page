@@ -30,7 +30,7 @@ export default function Features() {
             </div>
 
             {/* Tab 1 */}
-            <div className={`${toggleState === 1 ? 'active-content' : 'content'} place-items-center gap-2`}>
+            <div className={`${toggleState === 1 ? 'active-content' : 'content'}`}>
                 <div className='relative p-10'>
                     <Image src="/illustration-features-tab-1.svg" alt='' width={300} height={300} />
                     <div className="bg-blue-500 w-11/12 h-3/4 rounded-r-full blue-backdrop-feature"></div>
