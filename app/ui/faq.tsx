@@ -25,6 +25,9 @@ export default function Faq() {
                             {data.question}
                             {activeQuestion === data.id ? <Image className="up-arrow" src="/icon-arrow.svg" width={15} height={15} alt="" /> : <Image src="/icon-arrow.svg" width={15} height={15} alt="" />}
                         </button>
+                        {activeQuestion === data.id && 
+                            <p className="text-width pb-4">{data.answer}</p>
+                        }
                         <hr className='h-px w-full bg-grey-100' />
                     </div> 
                 ))}
