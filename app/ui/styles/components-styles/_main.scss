@@ -45,11 +45,42 @@
     height: auto;
 }
 
-
 @media (min-width: 48rem) {
     .grid-layout {
         display: grid;
         column-gap: 2rem;
-        grid-template-columns: minmax(2rem, 1fr) minmax(0, 60rem) minmax(2rem, 1fr);
+        grid-template-columns: minmax(2rem, 1fr) minmax(0, 65rem) minmax(2rem, 1fr);
+        grid-template-areas: 
+            '. nav .'
+            '. hero .'
+            '. features .'
+            '. extensions .'
+            '. faq .'
+            '. footer .'
+        ;
+    }
+
+    .grid-layout > .nav {
+        grid-area: nav;
+    }
+
+    .grid-layout > .hero {
+        grid-area: hero;
+    } 
+
+    .grid-layout > .features {
+        grid-area: features;
+    }
+
+    .grid-layout > .extensions {
+        grid-area: extensions;
+    } 
+
+    .grid-layout > .faq {
+        grid-area: faq;
+    } 
+
+    .grid-layout > .footer {
+        grid-area: footer;
     }
 }

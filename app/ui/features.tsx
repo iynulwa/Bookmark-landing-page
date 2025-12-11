@@ -12,7 +12,7 @@ export default function Features() {
     }
 
     return (
-        <section className='grid gap-4'>
+        <section className='features grid gap-4'>
             <h2 className='text-2xl font-bold text-center'>Features</h2>
             <p className='text-center text-width'>
                 Our aim is to make it quick and easy for you to access your

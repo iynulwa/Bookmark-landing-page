@@ -13,7 +13,7 @@ export default function Navigation() {
     }
 
     return (
-        <nav className="flex items-center justify-between w-full p-8 gap-8">
+        <nav className="nav flex items-center justify-between w-full p-8 gap-8">
             <Image src="/logo-bookmark.svg" alt="Company Logo" width={150} height={150} />
             <ul className="items-center gap-8 hidden md:flex">
                 <li>FEATURES</li>

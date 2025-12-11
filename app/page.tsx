@@ -8,9 +8,9 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div>
-      <main className="grid place-items-center gap-10">
+      <main className="grid place-items-center gap-10 grid-layout">
         <Navigation />
-        <section className="flex items-center justify-center flex-col md:flex-row gap-4">
+        <section className="hero flex items-center justify-center flex-col md:flex-row gap-4">
           <div className="relative">
             <Image src="/illustration-hero.svg" alt="" width={350} height={350} />
             <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-l-full blue-backdrop"></div>

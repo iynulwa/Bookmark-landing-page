@@ -3,7 +3,7 @@ import Search from './search'
 
 export default function Footer() {
     return(
-        <section className='w-full'>
+        <section className='footer w-full'>
             <div className='bg-[var(--clr-blue-600)] grid place-items-center py-20'>
                 <p className='text-white font-normal tracking-widest'>35,000+ ALREADY JOINED</p>
                 <p className='text-2xl text-center text-white font-medium'>Stay up-to-date with what we're doing</p>

@@ -3,7 +3,7 @@ import Card from './extension-card';
 
 export default function ExtensionDownload () {
     return (
-        <section className='grid gap-4'>
+        <section className='extensions grid gap-4'>
             <h2 className='text-2xl font-bold text-center'>Download the extension</h2>
             <p className='text-center text-width'>
                 We've got more browsers in the pipeline. Please
