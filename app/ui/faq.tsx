@@ -32,7 +32,7 @@ export default function Faq() {
                     </div> 
                 ))}
             </div>
-            <button className="my-10 py-4 px-6 rounded-lg bg-blue-600 text-white drop-shadow-md">More Info</button>
+            <button className="my-10 py-4 px-6 rounded-lg bg-[var(--clr-blue-600)] text-white drop-shadow-md">More Info</button>
         </section>
     )
 }

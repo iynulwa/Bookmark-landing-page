@@ -6,7 +6,7 @@
 .blue-backdrop {
     position: absolute;
     inset-block-end: 0;
-    inset-inline-end: -15%;
+    inset-inline-end: -10%;
     z-index: -1;
 }
 
@@ -15,7 +15,7 @@
 .blue-backdrop-feature {
     position: absolute;
     inset-block-end: 0;
-    inset-inline-start: -15%;
+    inset-inline-start: -10%;
     z-index: -1;
 }
 
@@ -43,4 +43,13 @@
     width: 100%;
     max-width: 1rem;
     height: auto;
+}
+
+
+@media (min-width: 48rem) {
+    .grid-layout {
+        display: grid;
+        column-gap: 2rem;
+        grid-template-columns: minmax(2rem, 1fr) minmax(0, 60rem) minmax(2rem, 1fr);
+    }
 }

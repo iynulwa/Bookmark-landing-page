@@ -19,7 +19,7 @@ export default function Navigation() {
                 <li>FEATURES</li>
                 <li>PRICING</li>
                 <li>CONTACT</li>
-                <li className="bg-red-400 py-3 px-8 rounded-lg text-white font-medium">LOGIN</li>
+                <li className="bg-[var(--clr-red-400)] py-3 px-8 rounded-lg text-white font-medium">LOGIN</li>
             </ul>
             <button onClick={openMenu} className={`nav-btn block md:hidden`}><span className="sr-only">Menu</span></button>
 
