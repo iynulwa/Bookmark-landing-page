@@ -12,30 +12,32 @@ export default function Features() {
     }
 
     return (
-        <section className='features grid gap-4'>
+        <section className='features grid gap-4 place-items-center'>
             <h2 className='text-2xl font-bold text-center'>Features</h2>
             <p className='text-center text-width'>
                 Our aim is to make it quick and easy for you to access your
                 favourite websites. Your bookmarks sync between your devices
                 so you can access them on  the go.
             </p>
-            <div className='flex flex-col items-center p-4 md:gap-4 md:flex-row md:justify-center'>
+            <div className='flex flex-col items-center p-4 md:p-0 md:gap-4 md:flex-row md:justify-center'>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
-                <button className="p-4" onClick={ () => toggleTab(1) }>Simple Bookmarking</button>
+                <button className={`p-4 relative ${toggleState === 1 && 'active-selection'}`} onClick={ () => toggleTab(1) }>Simple Bookmarking</button>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
-                <button className="p-4" onClick={ () => toggleTab(2) }>Speedy Search</button>
+                <button className={`p-4 relative ${toggleState === 2 && 'active-selection'}`} onClick={ () => toggleTab(2) }>Speedy Search</button>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
-                <button className="p-4" onClick={ () => toggleTab(3) }>Easy Sharing</button>
+                <button className={`p-4 relative ${toggleState === 3 && 'active-selection'}`} onClick={ () => toggleTab(3) }>Easy Sharing</button>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
             </div>
+
+            <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 m-auto hidden md:block' />
 
             {/* Tab 1 */}
             <div className={`${toggleState === 1 ? 'active-content' : 'content'}`}>
                 <div className='relative p-10'>
-                    <Image src="/illustration-features-tab-1.svg" alt='' width={300} height={300} />
+                    <Image src="/illustration-features-tab-1.svg" alt='' width={300} height={300} className='md:w-96' />
                     <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-r-full blue-backdrop-feature"></div>
                 </div>
-                <div className='md:flex md:flex-col md:items-start md:gap-4'>
+                <div className='flex flex-col items-center justify-center md:items-start gap-4'>
                     <h3 className='text-2xl font-medium text-center'>Bookmark in one click</h3>
                     <p className='text-center text-width md:text-left'>
                         Organize your bookmarks however you like. Our simple
@@ -47,12 +49,12 @@ export default function Features() {
             </div>
 
             {/* Tab 2 */}
-            <div className={`spin ${toggleState === 2 ? 'active-content' : 'content'}`}>
+            <div className={`${toggleState === 2 ? 'active-content' : 'content'}`}>
                 <div className='relative p-10'>
                     <Image src="/illustration-features-tab-2.svg" alt='' width={300} height={300} />
                     <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-r-full blue-backdrop-feature"></div>
                 </div>
-                <div className='md:flex md:flex-col md:items-start md:gap-4'>
+                <div className='flex flex-col items-center justify-center md:items-start gap-4'>
                     <h3 className='text-2xl font-medium text-center'>Intelligent search</h3>
                     <p className='text-center text-width md:text-left'>
                         Our powerful search feature will help you find saved sites
@@ -63,12 +65,12 @@ export default function Features() {
             </div>
 
             {/* Tab 3 */}
-            <div className={`spin ${toggleState === 3 ? 'active-content' : 'content'}`}>
+            <div className={`${toggleState === 3 ? 'active-content' : 'content'}`}>
                 <div className='relative p-10'>
                     <Image src="/illustration-features-tab-3.svg" alt='' width={300} height={300} />
                     <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-r-full blue-backdrop-feature"></div>
                 </div>
-                <div className='md:flex md:flex-col md:items-start md:gap-4'>
+                <div className='flex flex-col items-center justify-center md:items-start gap-4'>
                     <h3 className='text-2xl font-medium text-center'>Share your bookmarks</h3>
                     <p className='text-center text-width md:text-left'>
                         Easily share your bookmarks and collections with others.

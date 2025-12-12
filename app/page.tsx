@@ -15,9 +15,9 @@ export default function Home() {
             <Image src="/illustration-hero.svg" alt="" width={350} height={350} />
             <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-l-full blue-backdrop"></div>
           </div>
-          <div className="flex flex-col gap-4 *:md:text-left md:items-start">
+          <div className="flex flex-col gap-4 *:md:text-left md:items-start md:w-1/2">
             <h1 className="text-4xl font-bold text-center">A Simple bookmark manager</h1>
-            <p className="text-width text-center md:text-left">
+            <p className="text-width m-auto text-center md:text-left">
               A clean and simple interface to organize your 
               favourite websites. Open a new browser tab and see your
               sites load instantly. Try it for free.
