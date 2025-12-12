@@ -56,7 +56,7 @@
             '. features .'
             '. extensions .'
             '. faq .'
-            '. footer .'
+            'footer footer footer'
         ;
     }
 
@@ -82,5 +82,12 @@
 
     .grid-layout > .footer {
         grid-area: footer;
+    }
+
+    .active-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
 }

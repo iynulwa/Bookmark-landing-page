@@ -10,7 +10,7 @@ export default function ExtensionDownload () {
                 do let us know if you've got a favourite  you'd like us
                 to prioritize
             </p>
-            <div className='*:mx-6 *:my-12'>
+            <div className='*:mx-6 *:my-12 md:flex'>
                 {data.map((info) => (
                     <Card
                         key={info.id}

@@ -11,11 +11,11 @@ export default function Home() {
       <main className="grid place-items-center gap-10 grid-layout">
         <Navigation />
         <section className="hero flex items-center justify-center flex-col md:flex-row gap-4">
-          <div className="relative">
+          <div className="relative md:order-1">
             <Image src="/illustration-hero.svg" alt="" width={350} height={350} />
             <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-l-full blue-backdrop"></div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 *:md:text-left md:items-start">
             <h1 className="text-4xl font-bold text-center">A Simple bookmark manager</h1>
             <p className="text-width text-center md:text-left">
               A clean and simple interface to organize your 

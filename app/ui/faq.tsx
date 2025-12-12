@@ -9,7 +9,7 @@ export default function Faq() {
     const [activeQuestion, setActiveQuestion] = useState <number | null>(null);
 
     return (
-        <section className="faq grid place-items-center gap-4">
+        <section className="faq grid place-items-center gap-4 md:w-3/4">
             <h2 className='text-2xl font-bold text-center'>Frequently asked questions</h2>
             <p className='text-center text-width'>
                 Here are some of our FAQs. If you have any

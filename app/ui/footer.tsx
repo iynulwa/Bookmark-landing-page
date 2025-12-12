@@ -9,7 +9,7 @@ export default function Footer() {
                 <p className='text-2xl text-center text-white font-medium'>Stay up-to-date with what we're doing</p>
                 <Search />
             </div>
-            <div className='grid place-items-center gap-6 bg-[var(--clr-blue-950)] py-10'>
+            <div className='grid place-items-center gap-6 bg-[var(--clr-blue-950)] py-10 md:flex md:items-center'>
                 <Image className="filter brightness-0 invert" width={150} height={150} src="/logo-bookmark.svg" alt='' />
                 <ul className='text-white text-center *:mb-6 *:last:mb-0'>
                     <li>FEATURES</li>
