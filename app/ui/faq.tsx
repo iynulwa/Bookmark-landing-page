@@ -16,17 +16,17 @@ export default function Faq() {
                 other questions you'd like answered please feel
                 free to email us.
             </p>
-            <div>
+            <div className="w-10/12">
                 {faqData.map((data) => (
                     <div className="flex flex-col items-start" key={data.id}>
                         <button
                             onClick={() => setActiveQuestion(activeQuestion === data.id ? null : data.id)}
-                            className="flex w-full items-center justify-between py-6 gap-10">
+                            className="flex w-full items-center justify-between py-6 gap-10 faq-btn">
                             {data.question}
                             {activeQuestion === data.id ? <Image className="up-arrow" src="/icon-arrow.svg" width={15} height={15} alt="" /> : <Image src="/icon-arrow.svg" width={15} height={15} alt="" />}
                         </button>
                         {activeQuestion === data.id && 
-                            <p className="text-width pt-4 pb-8">{data.answer}</p>
+                            <p className="pt-4 pb-8">{data.answer}</p>
                         }
                         <hr className='h-px w-full bg-grey-100' />
                     </div> 

@@ -19,17 +19,15 @@ export default function Features() {
                 favourite websites. Your bookmarks sync between your devices
                 so you can access them on  the go.
             </p>
-            <div className='flex flex-col items-center p-4 md:p-0 md:gap-4 md:flex-row md:justify-center'>
+            <div className='w-full flex flex-col items-center p-4 md:p-0 md:gap-8 md:flex-row md:justify-center'>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
-                <button className={`p-4 relative ${toggleState === 1 && 'active-selection'}`} onClick={ () => toggleTab(1) }>Simple Bookmarking</button>
+                <button className={`p-4 relative ${toggleState === 1 && 'active-selection'} features-btn`} onClick={ () => toggleTab(1) }>Simple Bookmarking</button>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
-                <button className={`p-4 relative ${toggleState === 2 && 'active-selection'}`} onClick={ () => toggleTab(2) }>Speedy Search</button>
+                <button className={`p-4 relative ${toggleState === 2 && 'active-selection'} features-btn`} onClick={ () => toggleTab(2) }>Speedy Search</button>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
-                <button className={`p-4 relative ${toggleState === 3 && 'active-selection'}`} onClick={ () => toggleTab(3) }>Easy Sharing</button>
+                <button className={`p-4 relative ${toggleState === 3 && 'active-selection'} features-btn`} onClick={ () => toggleTab(3) }>Easy Sharing</button>
                 <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 md:hidden' />
             </div>
-
-            <hr className='bg-[var(--clr-grey-50)]h-px w-9/12 bg-grey-100 m-auto hidden md:block' />
 
             {/* Tab 1 */}
             <div className={`${toggleState === 1 ? 'active-content' : 'content'}`}>
@@ -51,7 +49,7 @@ export default function Features() {
             {/* Tab 2 */}
             <div className={`${toggleState === 2 ? 'active-content' : 'content'}`}>
                 <div className='relative p-10'>
-                    <Image src="/illustration-features-tab-2.svg" alt='' width={300} height={300} />
+                    <Image src="/illustration-features-tab-2.svg" alt='' width={300} height={300} className='md:w-96' />
                     <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-r-full blue-backdrop-feature"></div>
                 </div>
                 <div className='flex flex-col items-center justify-center md:items-start gap-4'>
@@ -67,7 +65,7 @@ export default function Features() {
             {/* Tab 3 */}
             <div className={`${toggleState === 3 ? 'active-content' : 'content'}`}>
                 <div className='relative p-10'>
-                    <Image src="/illustration-features-tab-3.svg" alt='' width={300} height={300} />
+                    <Image src="/illustration-features-tab-3.svg" alt='' width={300} height={300} className='md:w-96' />
                     <div className="bg-[var(--clr-blue-600)] w-11/12 h-3/4 rounded-r-full blue-backdrop-feature"></div>
                 </div>
                 <div className='flex flex-col items-center justify-center md:items-start gap-4'>

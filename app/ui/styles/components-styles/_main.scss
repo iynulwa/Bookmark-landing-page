@@ -2,13 +2,33 @@
     width: 35ch;
 }
 
+//hero
+
 .blue-backdrop {
     position: absolute;
     inset-block-end: 0;
-    inset-inline-end: 0%;
+    inset-inline-end: 0;
     z-index: -1;
     width: 60vw;
-    margin-inline-end: calc(-50vw + 50%);
+    margin-inline-end: calc(-50vw + 20%);
+}
+
+.hero-btn-main:hover,
+.hero-btn-main:focus {
+    cursor: pointer;
+    border: 1px solid var(--clr-blue-600);
+    background-color: transparent;
+    color: var(--clr-blue-600);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.hero-btn-second:hover,
+.hero-btn-second:focus {
+    cursor: pointer;
+    border: 1px solid var(--clr-blue-950);
+    background-color: transparent;
+    color: var(--clr-blue-950);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 // features
@@ -22,6 +42,11 @@
     margin-inline-start: calc(-50vw + 50%);
 }
 
+.features-btn:hover {
+    cursor: pointer;
+    color: var(--clr-red-400);
+}
+
 .active-selection {
     &::after {
         content: '';
@@ -29,7 +54,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        height: 3px;
+        height: 4px;
         width: 100%;
         border-radius: .5rem;
     }
@@ -51,6 +76,15 @@
     box-shadow: 2px 4px 10px 0px rgba(183, 183, 183, 0.35);
 }
 
+.add-extension-btn:hover,
+.add-extension-btn:focus {
+    cursor: pointer;
+    border: 1px solid var(--clr-blue-600);
+    background-color: transparent;
+    color: var(--clr-blue-600);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
 // faq
 
 .up-arrow {
@@ -61,6 +95,27 @@
     height: auto;
 }
 
+.faq-btn:hover {
+    cursor: pointer;
+    color: var(--clr-red-400);
+}
+
+.faq-btn:focus > .up-arrow {
+    filter: hue-rotate(120deg);
+}
+
+// footer
+
+.footer-li:hover {
+    cursor: pointer;
+    color: var(--clr-red-400);
+}
+
+.footer-img-div:hover > img {
+    filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+
+//tablet and desktop screens
 @media (min-width: 48rem) {
 
     .text-width {
@@ -70,7 +125,7 @@
     .grid-layout {
         display: grid;
         column-gap: 2rem;
-        grid-template-columns: minmax(2rem, 1fr) minmax(0, 65rem) minmax(2rem, 1fr);
+        grid-template-columns: minmax(2rem, 1fr) minmax(0, 70rem) minmax(2rem, 1fr);
         grid-template-areas: 
             '. nav .'
             '. hero .'

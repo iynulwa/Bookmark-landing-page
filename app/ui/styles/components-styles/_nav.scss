@@ -6,3 +6,18 @@
     background-image: url(/icon-hamburger.svg);
     background-size: cover;
 }
+
+.nav-li:hover,
+.nav-li:focus {
+    cursor: pointer;
+    color: var(--clr-red-400);
+}
+
+.nav-login:hover,
+.nav-login:focus {
+    cursor: pointer;
+    border: 1px solid var(--clr-red-400);
+    background-color: transparent;
+    color: var(--clr-red-400);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}

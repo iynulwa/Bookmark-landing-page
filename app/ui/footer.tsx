@@ -10,15 +10,15 @@ export default function Footer() {
                 <Search />
             </div>
             <div className='grid place-items-center gap-6 bg-[var(--clr-blue-950)] py-10 md:py-4 md:flex md:items-center md:justify-between md:px-24'>
-                <div className='md:flex md:gap-12 md:items-center md:justify-center md:py-8'>
+                <div className='md:flex md:gap-12 md:items-center md:justify-center'>
                     <Image className="py-6 filter brightness-0 invert" width={150} height={150} src="/logo-bookmark.svg" alt='' />
                     <ul className='text-white text-center *:mb-6 *:last:mb-0 md:flex md:gap-4 md:*:mb-0'>
-                        <li>FEATURES</li>
-                        <li>PRICING</li>
-                        <li>CONTACT</li>
+                        <li className='footer-li'>FEATURES</li>
+                        <li className='footer-li'>PRICING</li>
+                        <li className='footer-li'>CONTACT</li>
                     </ul>
                 </div>
-                <div className='flex gap-8 md:py-8'>
+                <div className='flex gap-8 footer-img-div'>
                     <Image src="/icon-facebook.svg" alt='Go to facebook' width={25} height={25} />
                     <Image src="/icon-twitter.svg" alt='Go to twitter' width={25} height={25} />
                 </div>
