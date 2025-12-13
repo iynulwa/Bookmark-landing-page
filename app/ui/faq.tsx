@@ -26,7 +26,7 @@ export default function Faq() {
                             {activeQuestion === data.id ? <Image className="up-arrow" src="/icon-arrow.svg" width={15} height={15} alt="" /> : <Image src="/icon-arrow.svg" width={15} height={15} alt="" />}
                         </button>
                         {activeQuestion === data.id && 
-                            <p className="pt-4 pb-8">{data.answer}</p>
+                            <p className="pt-4 pb-8 max-w-prose">{data.answer}</p>
                         }
                         <hr className='h-px w-full bg-grey-100' />
                     </div> 
