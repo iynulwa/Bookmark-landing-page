@@ -115,6 +115,10 @@
     filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
 
+.error-state {
+    border: 1px solid var(--clr-red-400);
+}
+
 //tablet and desktop screens
 @media (min-width: 48rem) {
 
