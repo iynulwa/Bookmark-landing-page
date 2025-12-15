@@ -30,10 +30,10 @@ export default function Search() {
     return(
         <div className="md:flex md:gap-6 md:w-1/2">
             <label htmlFor="email" className="sr-only">Email</label>
-            <div>
-                <input onChange={handleChange} className="bg-white w-full p-4 rounded-md text-black" id="email" type="email" value={input} name="email" placeholder="Enter your email address" required/>
-                {errorState && <Image className="w-auto h-4" src='/icon-error.svg' alt="" width={25} height={12} />}
-                {errorState && <p className="bg-[var(--clr-red-400)] rounded-md p-2 text-white">Whoops, make sure it is an email</p>}
+            <div className="relative">
+                <input onChange={handleChange} className={`bg-white w-full p-4 rounded-t-md text-black ${errorState && 'error-state'}`} id="email" type="email" value={input} name="email" placeholder="Enter your email address" required/>
+                {errorState && <Image className="w-auto h-6 absolute top-4 right-4" src='/icon-error.svg' alt="" width={25} height={12} />}
+                {errorState && <p className="bg-[var(--clr-red-400)] rounded-b-md p-2 text-white">Whoops, make sure it is an email</p>}
             </div>
             <button onClick={handleSubmit} className="w-full bg-[var(--clr-red-400)] text-white p-4 my-2 rounded-md md:my-0 md:w-1/2">Contact Us</button>
         </div>
