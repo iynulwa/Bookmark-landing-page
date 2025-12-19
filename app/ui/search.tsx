@@ -21,21 +21,22 @@ export default function Search() {
         event.preventDefault();
 
         if (input.trim() === '' || !validate(input)) {
-            setErrorState(true)
+            setErrorState(true);
         } else {
-            setErrorState(false)
+            setErrorState(false);
+            setInput('');
         }
     }
 
     return(
-        <div className="md:flex md:gap-6 md:w-1/2">
+        <div className="w-9/12 md:flex md:gap-6 md:w-7/12">
             <label htmlFor="email" className="sr-only">Email</label>
-            <div className="relative">
+            <div className="relative w-full">
                 <input onChange={handleChange} className={`bg-white w-full p-4 rounded-t-md text-black ${errorState && 'error-state'}`} id="email" type="email" value={input} name="email" placeholder="Enter your email address" required/>
                 {errorState && <Image className="w-auto h-6 absolute top-4 right-4" src='/icon-error.svg' alt="" width={25} height={12} />}
                 {errorState && <p className="bg-[var(--clr-red-400)] rounded-b-md p-2 text-white">Whoops, make sure it is an email</p>}
             </div>
-            <button onClick={handleSubmit} className="w-full bg-[var(--clr-red-400)] text-white p-4 my-2 rounded-md md:my-0 md:w-1/2">Contact Us</button>
+            <button onClick={handleSubmit} className="contact-us w-full bg-[var(--clr-red-400)] text-white p-4 my-2 rounded-md md:my-0 md:w-4/12 h-12">Contact Us</button>
         </div>
     )
 }
