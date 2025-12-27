@@ -6,11 +6,10 @@
 
 .blue-backdrop {
     position: absolute;
-    inset-block-end: 0;
-    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
     z-index: -1;
-    width: 60vw;
-    margin-inline-end: calc(-50vw + 20%);
+    transform: translateX(clamp(2rem, 3rem + 20vw, 40rem));
 }
 
 .hero-btn-main:hover,
@@ -132,6 +131,11 @@
 
     .text-width {
         margin: 0;
+    }
+
+    .blue-backdrop {
+        width: 60vw;
+        transform: translateX(clamp(2rem, 4rem, 6rem));
     }
 
     .grid-layout {

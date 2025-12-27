@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div>
-      <main className="grid place-items-center gap-10 grid-layout">
+      <main className="grid place-items-center gap-10 grid-layout overflow-hidden">
         <Navigation />
         <section className="hero flex items-center justify-center flex-col md:flex-row gap-4 md:justify-between">
           <div className="relative md:order-1">
